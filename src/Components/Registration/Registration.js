@@ -25,6 +25,11 @@ const Registration = () => {
             })
     };
 
+    const handleDoneRegister = () => {
+        alert("Done registration! Checkout see your registration now")
+    }
+
+
     return (
         <div>
             <form className="col" onSubmit={handleSubmit(onSubmit)}>
@@ -54,7 +59,7 @@ const Registration = () => {
                 <input
                     type="text"
                     name="description"
-                    defaultValue="Description"
+                    placeholder="description"
                     className="form-input"
                     ref={register({ required: true })} />
                 <input
@@ -64,7 +69,10 @@ const Registration = () => {
                     className="form-input"
                     ref={register({ required: true })} />
 
-                <input type="submit" className="register-btn"
+                <input 
+                    onClick={handleDoneRegister} 
+                    type="submit" 
+                    className="register-btn" 
                     value="Registration" />
                 {loggedInUser.email &&
                     <Link to="/userTask"> <button

@@ -13,16 +13,19 @@ const UserRegisterDetails = ({ taskInfo }) => {
     return (
         <div className="col-md-6">
             <div style={{ width: "200px" }}>
-                <img src={require('../../Images/libraryBooks.png')}
-                    className="card-img-top" alt=""></img>
+                <img src={require ('../../Images/musicLessons.png')}
+                    className="card-img-top" alt=""/>
                 <div className="card-body">
                     <h5 className="card-title">{taskInfo.taskName}</h5>
                     <p className="card-text">{taskInfo.date}</p>
                     <button
-                        onClick={() => handleDelete( `${taskInfo._id}`)}>Cancel</button>
+                        onClick={() => handleDelete( `${taskInfo._id}`)}>Cancel
+                    </button>
                 </div>
             </div>
         </div>
+          
+        
     );
 };
 
