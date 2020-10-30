@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
         <div className="main-container">
-            <h1 style={{ textAlign: 'center' }}> I GROW BY HELPING PEOPLE IN NEED</h1>
+            <p > I GROW BY HELPING PEOPLE IN NEED</p>
             <div>
                 <div className="row">
                     {
